@@ -75,13 +75,3 @@ describe("launches API", () => {
     });
   });
 });
-
-// describe("Test DELETE /launches", () => {
-//   test("It should respond with 200 success", async () => {
-//     const response = await request(app)
-//       .delete("/launches/114")
-//       .expect("Content-Type", /json/)
-//       .expect(200);
-//     expect((await response).statusCode).toBe(200); // another way
-//   });
-// });
