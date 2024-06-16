@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 require('dotenv').config();
 
-const MONGODB_URL = process.env.MONGODB_URL;
+const MONGO_URL = process.env.MONGO_URL;
 
 
 mongoose.connection.once("open", () => {
@@ -15,7 +15,7 @@ mongoose.connection.once("open", () => {
 
 
 async function mongoConnect() {
-  await mongoose.connect(MONGODB_URL);
+  await mongoose.connect(MONGO_URL);
 }
 
 async function mongoDisconnect() {
